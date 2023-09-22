@@ -1,0 +1,22 @@
+<h1>Les différents Bindings</h1>
+<hr>
+
+<h3>Bindings One Way</h3>
+<p>Ma string : {{ str }}</p>
+<p>Mon nombre : {{num}}</p>
+<p>Mon Boolean : {{bool}}</p>
+<p>Ma Date : {{date}}</p>
+
+<h3>Bindings Two Way</h3>
+<p>TW_STR : {{ tw_str}}</p>
+<input [(ngModel)]="tw_str" type="text">
+<br><br>
+<p>TW_NUMBER : {{ tw_number}}</p>
+<input [(ngModel)]="tw_number" type="number" >
+
+<hr>
+<h3>Binding d'évenements</h3>
+<p>Count : {{ count}}</p>
+<button (click)="increment()">+</button>
+<button (click)="decrement()">-</button>
+<button (dblclick) = "resetcount()">Reset</button>
