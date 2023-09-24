@@ -1,7 +1,24 @@
-<h1 class="">Exos1 : Les différents bindings</h1>
-<hr>
-<h2>Chronomètre Seconde</h2>
+<div class=" m-0 d-flex flex-column align-items-center my-2 font-family-CroissantOne bg-light">
+    <h1 class="display4 text-center  "><ins>Exos1 : Chronomètres</ins></h1>
+<div class="border border-primary p-3 text-center m-3  bg-white">
+<h2 class="">Chronomètre Secondes</h2>
 <p>{{chrono}}</p>
-<button  (click)="startChrono()">Start</button>
-<button (click)="stopChrono()">Stop</button>
-<button (click)="resetChrono()">Reset</button>
+<button class="m-2 btn btn-outline-primary btn-sm"  (click)="startChrono()">Start</button>
+<button class="m-2 btn btn-outline-primary btn-sm" (click)="stopChrono()">Stop</button>
+<button class="m-2 btn btn-outline-primary btn-sm" (click)="resetChrono()">Reset</button>
+</div>
+<div class="border border-primary p-3 text-center m-3   bg-white">
+    <h2 class="">Chronomètre Minutes/Secondes</h2>
+    <p>{{getFormattedTime()}}</p>
+    <button class="m-2 btn btn-outline-primary btn-sm"  (click)="startChrono2()">Start</button>
+    <button class="m-2 btn btn-outline-primary btn-sm" (click)="stopChrono2()">Stop</button>
+    <button class="m-2 btn btn-outline-primary btn-sm" (click)="resetChrono2()">Reset</button>
+    </div>
+    <div class="border border-primary p-3 text-center m-3   bg-white">
+        <h2 class="">Chronomètre Minutes/Secondes/Milli</h2>
+        <p>{{getFormattedTime2()}}</p>
+        <button class="m-2 btn btn-outline-primary btn-sm"  (click)="startChrono3()">Start</button>
+        <button class="m-2 btn btn-outline-primary btn-sm" (click)="stopChrono3()">Stop</button>
+        <button class="m-2 btn btn-outline-primary btn-sm" (click)="resetChrono3()">Reset</button>
+        </div>
+</div>

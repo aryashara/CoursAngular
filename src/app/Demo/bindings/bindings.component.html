@@ -1,22 +1,26 @@
-<h1>Les différents Bindings</h1>
-<hr>
+<div class="font-family-CroissantOne m-3 text-center row">
+<h1 ><ins>Les différents Bindings</ins></h1>
 
-<h3>Bindings One Way</h3>
+<div class="mt-3">
+<h3><ins>Bindings One Way</ins></h3>
 <p>Ma string : {{ str }}</p>
 <p>Mon nombre : {{num}}</p>
 <p>Mon Boolean : {{bool}}</p>
 <p>Ma Date : {{date}}</p>
-
-<h3>Bindings Two Way</h3>
+</div>
+<div class="">
+<h3><ins>Bindings Two Way</ins></h3>
 <p>TW_STR : {{ tw_str}}</p>
 <input [(ngModel)]="tw_str" type="text">
 <br><br>
 <p>TW_NUMBER : {{ tw_number}}</p>
 <input [(ngModel)]="tw_number" type="number" >
-
-<hr>
-<h3>Binding d'évenements</h3>
-<p>Count : {{ count}}</p>
-<button (click)="increment()">+</button>
-<button (click)="decrement()">-</button>
-<button (dblclick) = "resetcount()">Reset</button>
+</div>
+<div class="mt-3">
+<h3><ins>Binding d'évenements</ins></h3>
+<p class="">Count : {{ count}}</p>
+<button class="btn btn-outline-primary btn-sm mb-2 m-3 mt-0" (click)="increment()">+</button>
+<button class="btn btn-outline-primary btn-sm mb-2 m-3 mt-0" (click)="decrement()">-</button>
+<button class="btn btn-outline-primary btn-sm mb-2 m-3 mt-0" (dblclick) = "resetcount()">Reset</button>
+</div>
+</div>

@@ -1,3 +1,12 @@
 
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+  .font-family-CroissantOne {
+    font-family: 'Croissant One', sans-serif;
+  }
+  #bg{
+    background-color: rgba(0, 123, 255, 0.25);
+  }
