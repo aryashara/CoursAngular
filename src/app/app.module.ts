@@ -8,17 +8,27 @@ import { HomeComponent } from './Demo/home/home.component';
 import { BindingsComponent } from './Demo/bindings/bindings.component';
 import { FormsModule } from '@angular/forms';
 
+import { Exos1Component } from './Demo/Exos/exos1/exos1.component';
+import { Exos2Component } from './Demo/Exos/exos2/exos2.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    BindingsComponent
+    BindingsComponent,
+    Exos1Component,
+    Exos2Component,
+    
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
