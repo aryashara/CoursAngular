@@ -7,18 +7,20 @@
     <div class="row m-3">
         <div class="col-md-4 bg-light border border-primary p-1 m-1">
             <h2 class="display3 "><ins>Ajouter un article :</ins></h2>
-            <input class="m-1" type="text" [(ngModel)]="nouvelArticle" placeholder="Nouvel article">
-            <button class="btn btn-outline-primary btn-sm m-5 " (click)="ajouterArticle()">Ajouter</button>
+            <input class="m-1 mt-3" type="text" [(ngModel)]="nouvelArticle" placeholder="Nouvel article">
+            <button class="btn btn-outline-primary btn-sm m-2 " (click)="ajouterArticle()">Ajouter</button>
         </div>
         
-        <div class="col-md-4 bg-light border border-primary m-4 mt-0 md-10">
+        <div class="col-md-4 bg-light border border-primary m-4 mt-1 md-10">
             <h2 class="display3 ml-10 "><ins>Article du Panier :</ins></h2>
             <ul class="ma-liste ">
                 <li class=" border-primary" *ngFor="let article of panierCourses">{{ article }}</li>
             </ul>
+            <p>Résultat du désassemblage : {{ resultatDesassemble }}</p>
+
         </div>
      
-        <div class="row">
+        <div class="row ">
             <div class="col-md-4 bg-light border border-primary m-1 p-1 mt-3">
             <h2><ins>Sélectionner Article :</ins></h2>
             <ul class="ma-liste">
@@ -28,8 +30,12 @@
                 </label>
             </li>
         </ul>
-        <button class="btn btn-outline-primary btn-sm mb-2" (click)="ajouterArticlesSelectionnes()">Ajouter</button>
-    </div>
+        <div class="d-flex justify-content-center align-items-center">
+            <button class="btn btn-outline-primary btn-sm mb-2" (click)="ajouterArticlesSelectionnes()">Ajouter</button>
+          </div>
+          
+        </div>
+        <button class="btn btn-outline-primary btn-sm mb-2 mt-5" (click)="desassemblerEtJoindreTableau()">Désassembler et Joindre</button>
 </div>
     </div>
 

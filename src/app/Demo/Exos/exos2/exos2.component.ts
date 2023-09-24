@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './exos2.component.html',
 })
 export class Exos2Component {
+  resultatDesassemble: string = '';
 
   panierCourses: string[] = [];
   nouvelArticle: string = '';
@@ -36,5 +37,9 @@ export class Exos2Component {
       }
     }
   }
-
+  desassemblerEtJoindreTableau() {
+    const tableauDesassemble = this.panierCourses.join('- '); // Utilisez le séparateur de votre choix
+    this.resultatDesassemble = tableauDesassemble;
+    console.log(tableauDesassemble);
+  }
 }
