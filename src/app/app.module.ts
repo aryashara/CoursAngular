@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { Exos1Component } from './Demo/Exos/exos1/exos1.component';
 import { Exos2Component } from './Demo/Exos/exos2/exos2.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { TutoComponent } from './Demo/tuto/tuto.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BindingsComponent,
     Exos1Component,
     Exos2Component,
+    TutoComponent,
     
     
   ],

@@ -76,7 +76,7 @@ stopChrono3() {
 }
 resetChrono3() {
   
-  this.chrono3 = { minutes: 0, seconds: 0, milli : 0 };
+  this.chrono3 = { minutes: 0, seconds: 0, milli:  0 };
 }
 
 getFormattedTime2(): string {
