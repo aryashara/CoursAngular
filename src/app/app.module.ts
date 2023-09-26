@@ -13,6 +13,14 @@ import { Exos2Component } from './Demo/Exos/exos2/exos2.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TutoComponent } from './Demo/tuto/tuto.component';
 
+import { ShoppingListeV1Component } from './Demo/Correctif/shopping-liste-v1/shopping-liste-v1.component';
+import { PipesComponent } from './Demo/pipes/pipes.component';
+import { ChronoV2Component } from './Demo/chrono-v2/chrono-v2.component';
+import { EurtobtcPipe } from './shared/Pipes/eurtobtc.pipe';
+import { TimerPipe } from './shared/Pipes/timer.pipe';
+
+
+
 
 @NgModule({
   declarations: [
@@ -23,6 +31,14 @@ import { TutoComponent } from './Demo/tuto/tuto.component';
     Exos1Component,
     Exos2Component,
     TutoComponent,
+  
+    ShoppingListeV1Component,
+       PipesComponent,
+    ChronoV2Component,
+       EurtobtcPipe,
+       TimerPipe,
+    
+  
     
     
   ],

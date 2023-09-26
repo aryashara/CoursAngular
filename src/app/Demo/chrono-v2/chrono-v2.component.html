@@ -1,0 +1,8 @@
+
+  <div>
+    <p>Temps écoulé : {{ time | timer }}</p>
+    <button class="btn btn-primary" [disabled]= "timer" (click)="startChrono()">Start</button>
+    <button class="btn btn-primary" [disabled]= "!timer" (click)="pauseChrono()">Pause</button>
+    <button (click)="ResetChrono()" [disabled]="timer <= 0">Reset</button>
+  </div>
+

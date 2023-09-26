@@ -1,0 +1,34 @@
+<p>shopping-liste-v1 works!</p>
+<div class="content">
+    <div class="leftblock">
+        <div class="form">
+            <div class="form-group">
+                <label>Article :</label>
+                <input type="text" [(ngModel)]="newArticle">
+                <button class="btn btn-sm-6 btn-info"(click)="ajouterArticle()" [disabled]="newArticle == ''">Validez</button>
+
+            </div>
+
+        </div>
+        <div class="articleList">
+            <ol>
+                <li *ngFor="let a of articleList; let i = index;">
+                    {{a}} &nbsp; <button (click)="ajout(i)" class="btn btn-sm-3 btn-info">+</button>
+                </li>"
+            </ol>
+
+        </div>
+
+    </div>
+    <div class="rightblock">
+        <ul class="limit">
+            <li *ngFor="let article of shoppingList;let i = index">
+                {{i+1}} - {{article}}
+            </li>
+        </ul>
+        <div>
+            <button (click)="desassembler()">Casser la liste</button>
+            {{listeCassee}}
+        </div>
+    </div>
+</div>
