@@ -18,6 +18,8 @@ import { PipesComponent } from './Demo/pipes/pipes.component';
 import { ChronoV2Component } from './Demo/chrono-v2/chrono-v2.component';
 import { EurtobtcPipe } from './shared/Pipes/eurtobtc.pipe';
 import { TimerPipe } from './shared/Pipes/timer.pipe';
+import { InputoutputComponent } from './Demo/inputoutput/inputoutput.component';
+import { ChildrenComponent } from './Demo/inputoutput/children/children.component';
 
 
 
@@ -37,6 +39,8 @@ import { TimerPipe } from './shared/Pipes/timer.pipe';
     ChronoV2Component,
        EurtobtcPipe,
        TimerPipe,
+       InputoutputComponent,
+       ChildrenComponent,
     
   
     
